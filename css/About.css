@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hero-section {
+    background: linear-gradient(to right, #6d05f6, #fb04ce);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#typedText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 50px; /* Tinggi minimum untuk menghindari pergeseran */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Tentang Kami - Styling */
+.content-section {
+    margin-top: 50px;
+    padding: 20px;
+    line-height: 1.8; /* Menambah jarak antar baris untuk keterbacaan */
+    color: #333; /* Warna teks utama */
+}
+
+.content-section h2 {
+    font-size: 2.5rem; /* Ukuran judul */
+    font-weight: 700; /* Bold pada judul */
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1rem; /* Ukuran teks paragraf */
+    margin-bottom: 15px; /* Jarak antar paragraf */
+    text-align: justify; /* Paragraf rata kanan-kiri untuk tampilan rapi */
+}
+
+.content-section p.text-center {
+    text-align: center; /* Tengah khusus untuk teks dengan kelas text-center */
+}
+
+.content-section p.fw-bold {
+    font-weight: 600; /* Bold khusus untuk teks dengan kelas fw-bold */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 15px;
+    }
+
+    .content-section h2 {
+        font-size: 2rem; /* Ukuran judul lebih kecil di perangkat kecil */
+    }
+
+    .content-section p {
+        font-size: 0.95rem; /* Ukuran teks paragraf lebih kecil */
+    }
+}

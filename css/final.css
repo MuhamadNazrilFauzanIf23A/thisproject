@@ -1,0 +1,98 @@
+/* Navbar */
+.sidebar {
+ background-color: rgba(255, 255, 255, 0.60);
+ backdrop-filter: blur(10px);
+}
+
+/* Gaya default untuk gambar profil */
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Dropdown default */
+.dropdown-menu {
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+}
+
+.dropdown-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Responsif untuk layar kecil (ponsel) */
+@media (max-width: 576px) {
+    .dropdown-menu {
+        position: absolute; /* Menggunakan posisi absolut untuk bebas dari layout kontainer */
+        top: 80px; /* Atur posisi dropdown di atas gambar profil */
+        right: 0; /* Sesuaikan posisi dropdown agar tetap sejajar */
+        transform: none; /* Nonaktifkan transform untuk perangkat kecil */
+        margin-top: 0;
+        z-index: 1050; 
+    }
+}
+
+/* Card */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+.card {
+    min-height: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+}
+
+/* bg */
+.background {
+    background: url('../Foto/rawr.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .background {
+        height: 30vh;
+    }
+}
+
+/* modal */
+ .modal-dialog {
+    margin-top: 130px;
+ }
+
+ /* footer */
+footer.bg-dark {  
+    width: 100%;
+}
